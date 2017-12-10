@@ -2,14 +2,32 @@ body{
     background-image: url(../images/gotbg.jpg);
     background-size: cover;
 }
-#pgtitle {
+h1 {
     float: right;
 }
 .char {
-    height: 125px;
-    width: 125px;
+    height: 200px;
+    width: 200px;
     float: left;
     border: solid;
-    border-width: 7px;
+    border-width: 20px;
     margin-right: 10px;
+}
+.selChar {
+    height: 200px;
+    width: 200px;
+    float: left;
+    border: solid;
+    border-width: 20px;
+    margin-right: 10px;
+    border-color: green;
+}
+.enemyChar {
+    height: 200px;
+    width: 200px;
+    float: left;
+    border: solid;
+    border-width: 20px;
+    margin-right: 10px;
+    border-color: red;
 }
