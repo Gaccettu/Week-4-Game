@@ -119,5 +119,139 @@ ramsay.on("click", function(){
     //Decrease HP of enemy character by attack strength
     //Decrease HP of chosen character by enemy counter attack strength
     //Increase Attack of chosen character
+$(".button").on("click", function(){
+    if((jonstat.chosen === true) && (samstat.defender === true)){
+        samstat.hp = samstat.hp - jonstat.attack;    
+        jonstat.attack = jonstat.attack * 2;
+            if(samstat.hp > 0){
+                jonstat.hp = jonstat.hp - samstat.counter;
+            }
+            else {
+                samstat.defender = false;
+                $(sam).hide();
+            }
+    }
+    else if((jonstat.chosen === true) && (hodorstat.defender === true)){
+        hodorstat.hp = hodorstat.hp - jonstat.attack;
+        jonstat.attack = jonstat.attack * 2;
+            if(hodorstat.hp > 0){
+                jonstat.hp = jonstat.hp - hodorstat.counter;
+            }
+            else {
+                hodorstat.defender = false;
+                $(hodor).hide();
+            }
+    }
+    else if((jonstat.chosen === true) && (ramsaystat.defender === true)){
+        ramsaystat.hp = ramsaystat.hp - jonstat.attack;
+        jonstat.attack = jonstat.attack * 2;
+            if(ramsaystat.hp > 0){
+                jonstat.hp = jonstat.hp - ramsay.counter;
+            }
+            else {
+                ramsaystat.defender = false;
+                $(ramsay).hide();
+            }    
+    }
+    else if((samstat.chosen === true) && (jonstat.defender === true)){
+        jonstat.hp = jonstat.hp - samstat.attack;
+        samstat.attack = samstat.attack * 2;
+            if(jonstat.hp > 0){
+                samstat.hp = samstat.hp - jonstat.counter;
+            }
+            else {
+                jonstat.defender = false;
+                $(jon).hide();
+            }
+    }
+    else if((samstat.chosen === true) && (hodorstat.defender === true)){
+        hodorstat.hp = hodorstat.hp - samstat.attack;
+        samstat.attack = samstat.attack * 2;
+        if(hodorstat.hp > 0){
+            samstat.hp = samstat.hp - hodorstat.counter;
+        }
+        else {
+            hodorstat.defender = false;
+            $(hodor).hide();
+        }
+    }
+    else if((samstat.chosen === true) && (ramsaystat.defender === true)){
+        ramsaystat.hp = ramsaystat.hp - samstat.attack;
+        samstat.attack = samstat.attack * 2;
+            if(ramsaystat.hp > 0){
+                samstat.hp = samstat.hp - ramsaystat.counter;
+            }
+            else {
+                ramsaystat.defender = false;
+                $(ramsay).hide();
+            }    
+    }
+    else if((hodorstat.chosen === true) && (jonstat.defender === true)){
+        jonstat.hp = jonstat.hp - hodorstat.attack;
+        hodorstat.attack = hodorstat.attack * 2;
+        if(jonstat.hp > 0){
+            hodorstat.hp = hodorstat.hp - jonstat.counter;
+        }
+        else {
+            jonstat.defender = false;
+            $(jon).hide();
+        }
+    }
+    else if((hodorstat.chosen === true) && (samstat.defender === true)){
+        samstat.hp = samstat.hp - hodorstat.attack;
+        hodorstat.attack = hodorstat.attack * 2
+        if(samstat.hp > 0){
+            hodorstat.hp = hodorstat.hp - samstat.counter;
+        }
+        else {
+            samstat.defender = false;
+            $(sam).hide();
+        }
+    }
+    else if((hodorstat.chosen === true) && (ramsaystat.defender === true)){
+        ramsaystat.hp = ramsaystat.hp - hodorstat.attack;
+        hodorstat.attack = hodorstat.attack * 2;
+            if(ramsaystat.hp > 0){
+                hodorstat.hp = hodorstat.hp - ramsaystat.counter;
+            }
+            else {
+                ramsaystat.defender = false;
+                $(ramsay).hide();
+            }    
+    }
+    else if((ramsaystat.chosen === true) && (jonstat.defender === true)){
+        jonstat.hp = jonstat.hp - ramsaystat.attack;
+        ramsaystat.attack = ramsaystat.attack * 2;
+        if(jonstat.hp > 0){
+            ramsaystat.hp = ramsaystat.hp - jonstat.counter;
+        }
+        else {
+            jonstat.defender = false;
+            $(jon).hide();
+        }
+    }
+    else if((ramsaystat.chosen === true) && (samstat.defender === true)){
+        samstat.hp = samstat.hp - ramsaystat.attack;
+        ramsaystat.attack = ramsaystat.attack * 2;
+            if(samstat.hp > 0){
+                ramsaystat.hp = ramsaystat.hp - samstat.counter;
+            }
+            else {
+                samstat.defender = false;
+                $(sam).hide();
+            }
+    }
+    else if((ramsaystat.chosen === true) && (hodorstat.defender === true)){
+        hodorstat.hp = hodorstat.hp - ramsaystat.attack;
+        ramsaystat.attack = ramsaystat.attack * 2;
+        if(hodorstat.hp > 0){
+            ramsaystat.hp = ramsaystat.hp - hodorstat.counter;
+        }
+        else {
+            hodorstat.defender = false;
+            $(hodor).hide();
+        }
+    }
+})
     //Repeat until one character's HP is empty
 //Repeat actions until all enemies defeated or selected character dies

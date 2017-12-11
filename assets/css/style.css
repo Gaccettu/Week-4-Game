@@ -12,6 +12,9 @@ h1 {
     border: solid;
     border-width: 20px;
     margin-right: 10px;
+    color: white;
+    border-color: rgb(37, 37, 37);
+    position: relative;
 }
 .selChar {
     height: 200px;
@@ -21,6 +24,8 @@ h1 {
     border-width: 20px;
     margin-right: 10px;
     border-color: green;
+    color: white;
+    position: relative;
 }
 .enemyChar {
     height: 200px;
@@ -30,4 +35,11 @@ h1 {
     border-width: 20px;
     margin-right: 10px;
     border-color: red;
+    color: white;
+    position: relative;
+}
+.name {
+    position: absolute;
+    color: white;
+    z-index: 1;
 }
