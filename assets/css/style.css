@@ -16,6 +16,10 @@ h1 {
     border-color: rgb(37, 37, 37);
     position: relative;
 }
+.img {
+    height: 160px;
+    width: 160px;
+}
 .selChar {
     height: 200px;
     width: 200px;
@@ -38,8 +42,24 @@ h1 {
     color: white;
     position: relative;
 }
+.hp {
+    position: absolute;
+    color: rgb(128, 231, 133);
+    z-index: 1;
+}
 .name {
     position: absolute;
+    font-weight: bold;
+    top: -15px;
+    left: -15px;
     color: white;
     z-index: 1;
+}
+#message {
+    color: white;
+    font-weight: bold;
+}
+#message1 {
+    color: white;
+    font-weight: bold;
 }
