@@ -28,7 +28,7 @@ var ramsay = $("<span>", {
     id: "ramsayB",
     class: "char",
 });
-ramsay.html("<img class='img' src='../Week-4-Game/assets/images/ramsay.jpg'></img>");
+ramsay.html("<img class='img' src='../Week-4-Game/assets/images/Ramsay.jpg'></img>");
 ramsay.attr("data-ramsay", ramsaystat);
 
 
